@@ -17,15 +17,56 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer {
-  background-color: black;
+  background-color: #353535;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-x: hidden;
+  margin: 0;
 }
 
-.footer__logo {
-  color: white;
+.footer__conteneur {
+  margin: auto;
+  margin-left: 20px;
 }
 
-.footer a {
+.footer__conteneur__logo {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+  margin: 10px 0;
+  padding-top: 20px;
+  width: 25%;
+}
+
+.footer__conteneur__lien {
   text-decoration: none;
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 7px 0;
+}
+
+.footer__conteneur__lien p {
+  margin: 0;
+  margin-left: 10px;
+}
+
+.footer__conteneur__lien .fa-utensils {
+  width: 17px;
+  margin-left: 3px;
+}
+
+.footer__conteneur__lien--gras {
+  font-weight: bold;
+}
+
+body {
+  max-width: 1920px;
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */

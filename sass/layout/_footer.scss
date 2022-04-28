@@ -1,14 +1,43 @@
 
 .footer {
-    background-color: black;
+    background-color: $couleur-footer;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    margin: 0;
 
-    &__logo {
-        color: white;
+    &__conteneur {
+        margin: auto;
+        margin-left: 20px;
+
+        &__logo {
+            filter: invert(100%);
+            margin: 10px 0;
+            padding-top: 20px;
+            width: 25%;
+        }
+
+        &__lien {
+            text-decoration: none;
+            color: white;
+            display: flex; 
+            margin: 7px 0;
+
+            p {
+                margin: 0;
+                margin-left: 10px;
+            }
+
+            .fa-utensils {
+                width: 17px;
+                margin-left: 3px;
+            }
+
+            &--gras {
+                font-weight: bold;
+            }
+        }
+
     }
     
-}
-
-.footer a {
-    text-decoration: none;
-    color: white;
 }
