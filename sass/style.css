@@ -52,7 +52,36 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header__conteneur__logo {
-  width: 150px;
+  width: 170px;
+}
+
+.localisation {
+  background-color: lightgrey;
+  opacity: 0.5;
+  height: 60px;
+}
+
+.localisation__conteneur {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: black;
+  margin: auto;
+  padding-top: 17px;
+}
+
+.localisation__conteneur i {
+  padding-right: 15px;
+  font-size: larger;
+}
+
+.localisation__conteneur p {
+  margin: 0;
+  padding-top: 2px;
+  font-weight: bold;
 }
 
 .footer {
