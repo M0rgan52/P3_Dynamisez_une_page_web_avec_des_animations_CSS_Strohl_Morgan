@@ -1,3 +1,8 @@
+body {
+  max-width: 1920px;
+  margin: 0;
+}
+
 @font-face {
   font-family: "roboto";
   src: url("/sass/polices/Roboto/Roboto-Regular.ttf") format("truetype");
@@ -14,6 +19,40 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'shrikhand', Arial, Helvetica, sans-serif;
+}
+
+.header {
+  margin: 0;
+  border-bottom: solid lightgrey 1px;
+  -webkit-box-shadow: 4px 4px 4px lightgrey;
+          box-shadow: 4px 4px 4px lightgrey;
+}
+
+.header__lien {
+  width: 20px;
+  color: black;
+  position: absolute;
+}
+
+.header i {
+  padding-top: 2px;
+  position: relative;
+  left: 20px;
+  font-size: larger;
+}
+
+.header__conteneur {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 25px auto 15px auto;
+}
+
+.header__conteneur__logo {
+  width: 150px;
 }
 
 .footer {
@@ -63,10 +102,5 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer__conteneur__lien--gras {
   font-weight: bold;
-}
-
-body {
-  max-width: 1920px;
-  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */
