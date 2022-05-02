@@ -3,6 +3,10 @@ body {
   margin: 0;
 }
 
+main {
+  color: black;
+}
+
 @font-face {
   font-family: "roboto";
   src: url("/sass/polices/Roboto/Roboto-Regular.ttf") format("truetype");
@@ -56,8 +60,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .localisation {
-  background-color: lightgrey;
-  opacity: 0.5;
+  background: rgba(211, 211, 211, 0.4);
   height: 60px;
 }
 
@@ -68,20 +71,22 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: black;
   margin: auto;
   padding-top: 17px;
+  opacity: 1;
 }
 
 .localisation__conteneur i {
   padding-right: 15px;
   font-size: larger;
+  opacity: 1;
 }
 
 .localisation__conteneur p {
   margin: 0;
   padding-top: 2px;
   font-weight: bold;
+  opacity: 1;
 }
 
 .footer {

@@ -1,19 +1,19 @@
 
 .localisation {
-    background-color: lightgrey;
-    opacity: 0.5;
+    background: rgba(211, 211, 211, 0.4);
     height: 60px;
 
     &__conteneur {
         display: flex;
         justify-content: center;
-        color: black;
         margin: auto;
         padding-top: 17px;
+        opacity: 1;
 
         i {
             padding-right: 15px;
             font-size: larger;
+            opacity: 1;
 
         }
 
@@ -21,7 +21,7 @@
             margin: 0;
             padding-top: 2px;
             font-weight: bold;
-
+            opacity: 1;
         }
     }
 }
