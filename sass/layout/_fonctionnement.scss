@@ -1,0 +1,57 @@
+
+.fonctionnement {
+   margin: 0;
+   margin-left: 10px;
+
+    &__conteneur {
+        display: flex;
+        flex-direction: column;
+
+        &__titre {
+            font-weight: lighter;   
+            margin-left: 15px;         
+        }
+
+        &__carte {
+            display: flex;
+            padding: 25px 2px 25px 0;
+            border-radius: 20px;
+            box-shadow: 5px 5px 5px rgba(211, 211, 211, 0.5);
+            background: linear-gradient(rgba(211,211,211,0.05), rgba(211,211,211,0.2));
+            margin: 1em auto;
+            width: 80%;
+
+            &--numero {
+                margin: 0;
+                margin-left: -10px;
+                color: white;
+                border: solid 1px $couleur-primaire;
+                border-radius: 100%;
+                background: $couleur-primaire;
+                padding: 2px 5px;
+                font-size: small;
+                font-weight: normal;
+                max-height: 15px;
+            }
+
+            &--logo {
+                margin-left: 30px;
+                color: $couleur-footer;
+
+                &.fa-mobile-screen-button {
+                    padding-left: 3px;
+                }
+
+                &.fa-list-ul {
+                    padding-left: 1px;
+                }
+            }
+
+            p:nth-child(3) {
+                margin: 0;
+                margin-left: 30px;
+                font-weight: bolder;
+            }
+        }
+    }
+}
