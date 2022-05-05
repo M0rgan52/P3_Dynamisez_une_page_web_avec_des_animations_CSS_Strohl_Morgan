@@ -14,11 +14,114 @@
     }
 }
 
+.main {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    margin-top: -3em;
+    width: 100%;
+}
+
 .menu {
     width: 100%;
     margin: 0;
-    margin-top: -25px;
-    background-color: rgba(211, 211, 211, 0.3);
+    background-color: rgb(246, 246, 246);
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
+
+    &__titre {
+        margin: 0;
+        padding: 1.5em 1em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 100;
+            margin-right: 0.2em;
+        }
+
+        & .fa-heart {
+            font-size: 2rem;
+        }
+    }
+
+    &__section {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        font-weight: normal;
+        font-style: normal;
+        border-bottom: 0.3em $couleur-tertiaire solid;
+        padding-bottom: 0.3em;
+        width: 2.5em;
+    }
+
+    &__carte {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: auto;
+        background-color: white;
+        border-radius: 1em;
+        box-shadow: 5px 5px 5px rgba(211, 211, 211, 0.5);
+        margin: 0.5em auto;
+        
+        p {
+            padding: 0 0.8em;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+
+            span {
+                display: block;
+                height: 5px;
+                font-weight: bold;
+            }
+        }
+
+    }
+
+    &--prix {
+        font-weight: bold;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &__entree {
+        padding: 0 1em;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    &__plat {
+        padding: 0 1em;
+        display: flex;
+        flex-direction: column;
+        margin-top: 2em;
+    }
+
+    &__dessert {
+        padding: 0 1em;
+        display: flex;
+        flex-direction: column;
+        margin-top: 2em;
+    }
+
+    &__btn {
+        margin: auto;
+        padding: 3em 0 5em 0;
+        text-align: center;
+
+        a {
+            text-decoration: none;
+            color: white;
+            padding: 1em 3em;
+            background: linear-gradient(to bottom right,$couleur-secondaire, $couleur-primaire);
+            box-shadow: 1px 1px 1px rgb(211,211,211);
+            border-radius: 2em;
+        }
+    }
+
 }
