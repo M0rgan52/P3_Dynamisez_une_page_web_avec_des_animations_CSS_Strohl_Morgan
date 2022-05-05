@@ -1,18 +1,18 @@
 
 .localisation {
     background: rgba(246, 246, 246, 0.5);
-    height: 60px;
+    height: 4em;
     border-bottom: solid 1px rgb(246, 246, 246);
 
     &__conteneur {
         display: flex;
         justify-content: center;
         margin: auto;
-        padding-top: 17px;
+        padding-top: 1em;
         opacity: 1;
 
         i {
-            padding-right: 15px;
+            padding-right: 1em;
             font-size: larger;
             opacity: 1;
 

@@ -2,13 +2,13 @@
 .images {
     width: 100%;
     margin: 0;
-    height: 350px;
+    height: 22em;
     overflow: hidden;
 
 
     img {
         width: 100%;
-        height: 400px;
+        height: 25em;
         object-fit: cover;
         overflow: hidden;
     }
@@ -26,8 +26,8 @@
     width: 100%;
     margin: 0;
     background-color: rgb(246, 246, 246);
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
 
     &__titre {
         margin: 0;

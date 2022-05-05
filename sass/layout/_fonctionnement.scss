@@ -1,21 +1,24 @@
 
 .fonctionnement {
    margin: 0;
-   margin-left: 10px;
+   margin-left: 0.5em;
 
     &__conteneur {
         display: flex;
         flex-direction: column;
 
-        &__titre {
-            font-weight: lighter;   
-            margin-left: 15px;         
+        &__titre {   
+            margin-left: 1em;   
+            
+            h2 {
+                font-weight: 100;
+            }
         }
 
         &__carte {
             display: flex;
-            padding: 25px 2px 25px 0;
-            border-radius: 20px;
+            padding: 1.5em 0.1em 1.5em 0;
+            border-radius: 1.5em;
             box-shadow: 5px 5px 5px rgba(211, 211, 211, 0.5);
             background: linear-gradient(rgba(246, 246, 246,0.05), rgba(246, 246, 246,0.2));
             margin: 1em auto;
@@ -35,7 +38,7 @@
             }
 
             &--logo {
-                margin-left: 30px;
+                margin-left: 2em;
                 color: $couleur-footer;
 
                 &.fa-mobile-screen-button {
@@ -49,7 +52,7 @@
 
             p:nth-child(3) {
                 margin: 0;
-                margin-left: 30px;
+                margin-left: 2em;
                 font-weight: bolder;
             }
         }

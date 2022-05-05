@@ -8,25 +8,25 @@
     &__conteneur {
         display: flex;
         flex-direction: column;
-        margin: auto 35px;
+        margin: auto 2.2em;
 
         &__titre {
             margin: 0;
-            padding-top: 30px;
-            font-weight: lighter;
+            padding-top: 1.3em;
+            font-weight: 100;
 
         }
 
         &__soustitre {
-            margin: 10px auto 25px auto;
+            margin: 0.6em auto 1.5em auto;
         }
 
         &__btn {
-            margin: 10px auto 60px auto;
-            padding: 15px 20px;
+            margin: 0.6em auto 3.5em auto;
+            padding: 1em 1.2em;
             text-decoration: none;
             color: white;
-            border-radius: 50px;
+            border-radius: 2em;
             background: linear-gradient(to bottom right,$couleur-secondaire, $couleur-primaire);
             box-shadow: 1px 1px 1px rgb(211,211,211);
 

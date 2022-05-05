@@ -7,24 +7,24 @@
 
     &__conteneur {
         margin: auto;
-        margin-left: 20px;
+        margin-left: 1.5em;
 
         &__logo {
             filter: invert(100%);
-            margin: 10px 0;
-            padding-top: 20px;
-            width: 115px
+            margin: 0.5em 0;
+            padding-top: 1.5em;
+            width: 7.5em;
         }
 
         &__lien {
             text-decoration: none;
             color: white;
             display: flex; 
-            margin: 7px 0;
+            margin: 0.5em 0;
 
             p {
                 margin: 0;
-                margin-left: 10px;
+                margin-left: 0.5em;
             }
 
             .fa-utensils {

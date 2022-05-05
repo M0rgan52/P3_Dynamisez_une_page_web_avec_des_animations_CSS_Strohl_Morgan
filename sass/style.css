@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header__lien {
-  width: 20px;
+  width: 1.5em;
   color: black;
   position: absolute;
 }
@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
 .header i {
   padding-top: 2px;
   position: relative;
-  left: 20px;
+  left: 1em;
   font-size: larger;
 }
 
@@ -53,16 +53,16 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 25px auto 15px auto;
+  margin: 1.5em auto 1em auto;
 }
 
 .header__conteneur__logo {
-  width: 170px;
+  width: 10.5em;
 }
 
 .localisation {
   background: rgba(246, 246, 246, 0.5);
-  height: 60px;
+  height: 4em;
   border-bottom: solid 1px #f6f6f6;
 }
 
@@ -74,12 +74,12 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-pack: center;
           justify-content: center;
   margin: auto;
-  padding-top: 17px;
+  padding-top: 1em;
   opacity: 1;
 }
 
 .localisation__conteneur i {
-  padding-right: 15px;
+  padding-right: 1em;
   font-size: larger;
   opacity: 1;
 }
@@ -112,25 +112,25 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: auto 35px;
+  margin: auto 2.2em;
 }
 
 .decouverte__conteneur__titre {
   margin: 0;
-  padding-top: 30px;
-  font-weight: lighter;
+  padding-top: 1.3em;
+  font-weight: 100;
 }
 
 .decouverte__conteneur__soustitre {
-  margin: 10px auto 25px auto;
+  margin: 0.6em auto 1.5em auto;
 }
 
 .decouverte__conteneur__btn {
-  margin: 10px auto 60px auto;
-  padding: 15px 20px;
+  margin: 0.6em auto 3.5em auto;
+  padding: 1em 1.2em;
   text-decoration: none;
   color: white;
-  border-radius: 50px;
+  border-radius: 2em;
   background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   -webkit-box-shadow: 1px 1px 1px lightgray;
@@ -139,7 +139,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .fonctionnement {
   margin: 0;
-  margin-left: 10px;
+  margin-left: 0.5em;
 }
 
 .fonctionnement__conteneur {
@@ -153,16 +153,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .fonctionnement__conteneur__titre {
-  font-weight: lighter;
-  margin-left: 15px;
+  margin-left: 1em;
+}
+
+.fonctionnement__conteneur__titre h2 {
+  font-weight: 100;
 }
 
 .fonctionnement__conteneur__carte {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 25px 2px 25px 0;
-  border-radius: 20px;
+  padding: 1.5em 0.1em 1.5em 0;
+  border-radius: 1.5em;
   -webkit-box-shadow: 5px 5px 5px rgba(211, 211, 211, 0.5);
           box-shadow: 5px 5px 5px rgba(211, 211, 211, 0.5);
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(246, 246, 246, 0.05)), to(rgba(246, 246, 246, 0.2)));
@@ -185,7 +188,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .fonctionnement__conteneur__carte--logo {
-  margin-left: 30px;
+  margin-left: 2em;
   color: #353535;
 }
 
@@ -199,7 +202,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .fonctionnement__conteneur__carte p:nth-child(3) {
   margin: 0;
-  margin-left: 30px;
+  margin-left: 2em;
   font-weight: bolder;
 }
 
@@ -217,7 +220,7 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: auto;
-  padding: 30px 0;
+  padding: 2em 0;
 }
 
 .restaurant__conteneur a {
@@ -233,7 +236,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .restaurant__conteneur__titre {
-  margin-left: 25px;
+  margin-left: 1.5em;
+}
+
+.restaurant__conteneur__titre h2 {
+  font-weight: 100;
 }
 
 .restaurant__conteneur__carte {
@@ -248,7 +255,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: auto;
   margin-bottom: 2em;
   position: relative;
-  border-radius: 20px;
+  border-radius: 1em;
   -webkit-box-shadow: 5px 5px 5px rgba(211, 211, 211, 0.5);
           box-shadow: 5px 5px 5px rgba(211, 211, 211, 0.5);
 }
@@ -260,25 +267,25 @@ h1, h2, h3, h4, h5, h6 {
 
 .restaurant__conteneur__carte figure img {
   width: 100%;
-  height: 150px;
+  height: 9.5em;
   overflow: hidden;
   -o-object-fit: cover;
      object-fit: cover;
   margin: 0;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
 }
 
 .restaurant__conteneur__carte__nouveau {
   position: absolute;
-  top: 23px;
-  right: 17px;
+  top: 1.5em;
+  right: 1em;
   text-decoration: none;
   background-color: #99E2D0;
   color: #278870;
   font-weight: bold;
-  padding: 3px 8px;
-  border-radius: 2px;
+  padding: 0.2em 0.5em;
+  border-radius: 0.2em;
 }
 
 .restaurant__conteneur__carte__nouveau p {
@@ -310,11 +317,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .restaurant__conteneur__carte__bas__info h3, .restaurant__conteneur__carte__bas__info p {
   margin: 3px 0;
+  font-weight: 100;
 }
 
 .restaurant__conteneur__carte__bas__info .fa-heart {
   font-size: x-large;
-  font-weight: lighter;
+  font-weight: 100;
 }
 
 .footer {
@@ -331,15 +339,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer__conteneur {
   margin: auto;
-  margin-left: 20px;
+  margin-left: 1.5em;
 }
 
 .footer__conteneur__logo {
   -webkit-filter: invert(100%);
           filter: invert(100%);
-  margin: 10px 0;
-  padding-top: 20px;
-  width: 115px;
+  margin: 0.5em 0;
+  padding-top: 1.5em;
+  width: 7.5em;
 }
 
 .footer__conteneur__lien {
@@ -348,12 +356,12 @@ h1, h2, h3, h4, h5, h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 7px 0;
+  margin: 0.5em 0;
 }
 
 .footer__conteneur__lien p {
   margin: 0;
-  margin-left: 10px;
+  margin-left: 0.5em;
 }
 
 .footer__conteneur__lien .fa-utensils {
@@ -368,13 +376,13 @@ h1, h2, h3, h4, h5, h6 {
 .images {
   width: 100%;
   margin: 0;
-  height: 350px;
+  height: 22em;
   overflow: hidden;
 }
 
 .images img {
   width: 100%;
-  height: 400px;
+  height: 25em;
   -o-object-fit: cover;
      object-fit: cover;
   overflow: hidden;
@@ -392,8 +400,8 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   margin: 0;
   background-color: #f6f6f6;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
 }
 
 .menu__titre {

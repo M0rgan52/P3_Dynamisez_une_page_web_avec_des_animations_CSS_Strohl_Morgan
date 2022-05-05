@@ -5,14 +5,14 @@
     box-shadow: 4px 4px 4px rgb(230, 230, 230);
 
     &__lien {
-        width: 20px;
+        width: 1.5em;
         color: $couleur-polices-base;
         position: absolute;
     }
         i {
             padding-top: 2px;
             position: relative;
-            left: 20px;
+            left: 1em;
             font-size: larger;
 
         }
@@ -20,10 +20,10 @@
     &__conteneur {
         display: flex;
         justify-content: center;
-        margin: 25px auto 15px auto;
+        margin: 1.5em auto 1em auto;
 
         &__logo {
-            width: 170px;
+            width: 10.5em;
     
 
         }
