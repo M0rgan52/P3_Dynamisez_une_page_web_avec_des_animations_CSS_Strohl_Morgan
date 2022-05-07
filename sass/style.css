@@ -479,6 +479,25 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 2rem;
 }
 
+@media all and (min-width: 992px) {
+  .menu__conteneur {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media all and (min-width: 992px) and (max-width: 1190px) {
+  .menu__conteneur {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .menu__section {
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -539,6 +558,16 @@ h1, h2, h3, h4, h5, h6 {
           flex-direction: column;
 }
 
+@media all and (min-width: 992px) {
+  .menu__entree {
+    padding: 0;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin: 0 1em;
+  }
+}
+
 .menu__plat {
   padding: 0 1em;
   display: -webkit-box;
@@ -551,6 +580,22 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 2em;
 }
 
+@media all and (min-width: 992px) {
+  .menu__plat {
+    padding: 0;
+    margin: 0 1em;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
+@media all and (min-width: 992px) and (max-width: 1190px) {
+  .menu__plat {
+    margin-top: 2em;
+  }
+}
+
 .menu__dessert {
   padding: 0 1em;
   display: -webkit-box;
@@ -561,6 +606,22 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 2em;
+}
+
+@media all and (min-width: 992px) {
+  .menu__dessert {
+    padding: 0;
+    margin: 0 1em;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
+@media all and (min-width: 992px) and (max-width: 1190px) {
+  .menu__dessert {
+    margin-top: 2em;
+  }
 }
 
 .menu__btn {
