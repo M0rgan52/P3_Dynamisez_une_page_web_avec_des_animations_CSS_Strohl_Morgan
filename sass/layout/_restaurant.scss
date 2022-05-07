@@ -24,6 +24,14 @@
             justify-content: space-around;
         }
 
+        @include desktop {
+            justify-content: space-between;
+
+            @media all and (max-width: 1155px) {
+                justify-content: space-around;;
+            }
+        }
+
         a {
             display: flex;
             flex-direction: column;
@@ -49,7 +57,11 @@
             }
 
             @include desktop {
-                margin: 0 2em 2em 2em;
+                margin: 0 1em 2em 1em;
+
+                @media all and (max-width: 1155px) {
+                    margin: 0 1.2em 2em 1.2em;
+                }
             }
 
             figure {

@@ -263,6 +263,21 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+@media all and (min-width: 992px) {
+  .restaurant__conteneur {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media all and (min-width: 992px) and (max-width: 1155px) {
+  .restaurant__conteneur {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 .restaurant__conteneur a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -301,7 +316,13 @@ h1, h2, h3, h4, h5, h6 {
 
 @media all and (min-width: 992px) {
   .restaurant__conteneur__carte {
-    margin: 0 2em 2em 2em;
+    margin: 0 1em 2em 1em;
+  }
+}
+
+@media all and (min-width: 992px) and (max-width: 1155px) {
+  .restaurant__conteneur__carte {
+    margin: 0 1.2em 2em 1.2em;
   }
 }
 
