@@ -36,6 +36,10 @@
         justify-content: space-between;
         align-items: center;
 
+        @include tablette {
+            padding: 1.5em 3em;
+        }
+
         h1 {
             font-size: 2rem;
             font-weight: 100;
@@ -66,7 +70,7 @@
         border-radius: 1em;
         box-shadow: 5px 5px 5px rgba(211, 211, 211, 0.5);
         margin: 0.5em auto;
-        
+
         p {
             padding: 0 0.8em;
             white-space: nowrap;

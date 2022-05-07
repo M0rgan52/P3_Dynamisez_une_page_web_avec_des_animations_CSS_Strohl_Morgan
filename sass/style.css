@@ -438,6 +438,12 @@ h1, h2, h3, h4, h5, h6 {
           align-items: center;
 }
 
+@media all and (min-width: 768px) {
+  .menu__titre {
+    padding: 1.5em 3em;
+  }
+}
+
 .menu__titre h1 {
   font-size: 2rem;
   font-weight: 100;
