@@ -3,11 +3,26 @@
     background-color: rgba(246, 246, 246, 0.3);
     margin: 0;
 
+    &__titre {
+
+        margin-left: 1.5em;
+
+        h2 {
+            font-weight: 100;
+        }
+    }
+
     &__conteneur {
         display: flex;
         flex-direction: column;
         margin: auto;
         padding: 2em 0;
+
+        @include tablette {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
 
         a {
             display: flex;
@@ -16,13 +31,7 @@
             color: $couleur-polices-base;
         }
 
-        &__titre {
-            margin-left: 1.5em;
 
-            h2 {
-                font-weight: 100;
-            }
-        }
 
         &__carte {
             display: flex;
@@ -33,6 +42,11 @@
             position: relative;
             border-radius: 1em;
             box-shadow: 5px 5px 5px rgba(211, 211, 211, 0.5);
+
+            @include tablette {
+                max-width: 22em;
+                margin: 0 0.2em 2em 0.2em;
+            }
 
             figure {
                 width: 100%;

@@ -4,3 +4,8 @@ $couleur-secondaire: #FF79DA;
 $couleur-tertiaire: #99E2D0;
 $couleur-footer: #353535;
 $couleur-polices-base: black;
+
+$breakpoint: (
+    tablette: 768px,
+    desktop: 992px,
+);
