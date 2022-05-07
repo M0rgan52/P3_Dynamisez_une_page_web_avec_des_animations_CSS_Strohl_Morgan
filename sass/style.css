@@ -142,6 +142,14 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 0.5em;
 }
 
+.fonctionnement__titre {
+  margin-left: 1em;
+}
+
+.fonctionnement__titre h2 {
+  font-weight: 100;
+}
+
 .fonctionnement__conteneur {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -152,12 +160,17 @@ h1, h2, h3, h4, h5, h6 {
           flex-direction: column;
 }
 
-.fonctionnement__conteneur__titre {
-  margin-left: 1em;
-}
-
-.fonctionnement__conteneur__titre h2 {
-  font-weight: 100;
+@media all and (min-width: 992px) {
+  .fonctionnement__conteneur {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 .fonctionnement__conteneur__carte {
@@ -172,6 +185,12 @@ h1, h2, h3, h4, h5, h6 {
   background: linear-gradient(rgba(246, 246, 246, 0.05), rgba(246, 246, 246, 0.2));
   margin: 1em auto;
   width: 80%;
+}
+
+@media all and (min-width: 992px) {
+  .fonctionnement__conteneur__carte {
+    max-width: 30%;
+  }
 }
 
 .fonctionnement__conteneur__carte--numero {
@@ -277,6 +296,12 @@ h1, h2, h3, h4, h5, h6 {
   .restaurant__conteneur__carte {
     max-width: 22em;
     margin: 0 0.2em 2em 0.2em;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .restaurant__conteneur__carte {
+    margin: 0 2em 2em 2em;
   }
 }
 

@@ -48,6 +48,10 @@
                 margin: 0 0.2em 2em 0.2em;
             }
 
+            @include desktop {
+                margin: 0 2em 2em 2em;
+            }
+
             figure {
                 width: 100%;
                 margin:0;

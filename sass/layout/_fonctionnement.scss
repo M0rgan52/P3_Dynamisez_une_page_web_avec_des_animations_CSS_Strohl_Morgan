@@ -3,16 +3,22 @@
    margin: 0;
    margin-left: 0.5em;
 
+    &__titre {   
+        margin-left: 1em;   
+            
+        h2 {
+            font-weight: 100;
+        }
+    }
+
     &__conteneur {
         display: flex;
         flex-direction: column;
 
-        &__titre {   
-            margin-left: 1em;   
-            
-            h2 {
-                font-weight: 100;
-            }
+        @include desktop {
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-around;
         }
 
         &__carte {
@@ -23,6 +29,10 @@
             background: linear-gradient(rgba(246, 246, 246,0.05), rgba(246, 246, 246,0.2));
             margin: 1em auto;
             width: 80%;
+
+            @include desktop {
+                max-width: 30%;
+            }
 
             &--numero {
                 margin: 0;
