@@ -29,6 +29,10 @@
             border-radius: 2em;
             background: linear-gradient(to bottom right,$couleur-secondaire, $couleur-primaire);
             box-shadow: 1px 1px 1px rgb(211,211,211);
+            transition: all 300ms;
+            &:hover {
+                @include hover_btn;
+            }
 
         }
     }

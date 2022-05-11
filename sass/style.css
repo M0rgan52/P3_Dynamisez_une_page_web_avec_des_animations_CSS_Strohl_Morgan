@@ -135,6 +135,16 @@ h1, h2, h3, h4, h5, h6 {
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   -webkit-box-shadow: 1px 1px 1px lightgray;
           box-shadow: 1px 1px 1px lightgray;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.decouverte__conteneur__btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0.5em 0.5em 0.5em #878787;
+          box-shadow: 0.5em 0.5em 0.5em #878787;
+  opacity: 0.85;
 }
 
 .fonctionnement {
@@ -305,6 +315,16 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 1em;
   -webkit-box-shadow: 5px 5px 5px rgba(211, 211, 211, 0.5);
           box-shadow: 5px 5px 5px rgba(211, 211, 211, 0.5);
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.restaurant__conteneur__carte:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0.5em 0.5em 0.5em #878787;
+          box-shadow: 0.5em 0.5em 0.5em #878787;
+  opacity: 0.85;
 }
 
 @media all and (min-width: 768px) {
@@ -660,5 +680,16 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-shadow: 1px 1px 1px lightgray;
           box-shadow: 1px 1px 1px lightgray;
   border-radius: 2em;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  display: inline-block;
+}
+
+.menu__btn a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0.5em 0.5em 0.5em #878787;
+          box-shadow: 0.5em 0.5em 0.5em #878787;
+  opacity: 0.85;
 }
 /*# sourceMappingURL=style.css.map */

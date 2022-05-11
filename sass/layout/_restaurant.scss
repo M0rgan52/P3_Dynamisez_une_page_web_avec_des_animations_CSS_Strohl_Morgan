@@ -50,6 +50,12 @@
             position: relative;
             border-radius: 1em;
             box-shadow: 5px 5px 5px rgba(211, 211, 211, 0.5);
+            transition: all 300ms;
+
+            &:hover {
+                @include hover_btn;
+            }
+
 
             @include tablette {
                 max-width: 22em;

@@ -13,3 +13,9 @@
     }
     
 }
+
+@mixin hover_btn {
+    transform: scale(1.1);
+    box-shadow: 0.5em 0.5em 0.5em darken(rgb(211,211,211), 30%);
+    opacity: 0.85;
+}
