@@ -1,3 +1,47 @@
+@-webkit-keyframes check-menu {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
+@keyframes check-menu {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
+@-webkit-keyframes check-rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes check-rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 body {
   max-width: 1920px;
   margin: 0;
@@ -553,29 +597,74 @@ h1, h2, h3, h4, h5, h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
-  margin: auto;
+  max-width: 100%;
+  margin: 0.5em 0;
   background-color: white;
   border-radius: 1em;
   -webkit-box-shadow: 5px 5px 5px rgba(211, 211, 211, 0.5);
           box-shadow: 5px 5px 5px rgba(211, 211, 211, 0.5);
-  margin: 0.5em auto;
+  overflow: hidden;
 }
 
 .menu__carte p {
-  padding: 0 0.8em;
+  padding: 0 0 0 0.8em;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  max-width: 90%;
 }
 
 .menu__carte p span {
   display: block;
   height: 5px;
   font-weight: bold;
+}
+
+.menu__carte .validation {
+  width: 4em;
+  background-color: #99E2D0;
+  overflow: hidden;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom-right-radius: 1em;
+  border-top-right-radius: 1em;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  margin: 0 -4em 0 0.1em;
+}
+
+.menu__carte .validation__check {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  color: white;
+  font-size: 1.5em;
+}
+
+.menu__carte:hover .validation {
+  -webkit-animation: check-menu 300ms both;
+          animation: check-menu 300ms both;
+  margin-right: 0;
+}
+
+.menu__carte:hover .validation__check {
+  -webkit-animation: check-rotate 300ms 100ms both;
+          animation: check-rotate 300ms 100ms both;
 }
 
 .menu--prix {
@@ -586,6 +675,12 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-bottom: .5em;
+  padding-right: 0.5em;
+  margin-left: 1em;
 }
 
 .menu__entree {
