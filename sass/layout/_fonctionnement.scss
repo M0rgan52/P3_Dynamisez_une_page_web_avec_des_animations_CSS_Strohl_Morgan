@@ -66,5 +66,13 @@
                 font-weight: bolder;
             }
         }
+
+        &__carte:nth-child(3) {
+            background: rgba($couleur-primaire, 0.1);
+
+            .fa-store {
+                color: $couleur-primaire;
+            }
+        }
     }
 }

@@ -114,10 +114,9 @@
                         margin: 3px 0;
                         font-weight: 100;
                     }
-
-                    & .fa-heart {
-                        font-size: x-large;
-                        font-weight: 100;
+                    
+                    &__heart {
+                        background-color: white!important;
                     }
                     
                 }
