@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     color: $couleur-primaire;
-    background: linear-gradient(rgba($couleur-primaire, 0.7), rgba($couleur-tertiaire, 1));
+    background: linear-gradient(rgba($couleur-primaire, 0.7) 30%, rgba($couleur-tertiaire, 1) 70%);
     position: fixed;
     top: 0;
     left: 0;
@@ -17,10 +17,15 @@
     
 
     &__image {
-        animation: rotation 1200ms 400ms  linear ;
+        animation: rotation 800ms 200ms  linear ;
         animation-iteration-count: infinite;
         position: absolute;
         top: 10em;
+
+        @include desktop {
+            top: 8em;
+            font-size: 4rem;
+        }
 
     }
 

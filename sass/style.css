@@ -131,8 +131,8 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-align: center;
           align-items: center;
   color: #9356DC;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(147, 86, 220, 0.7)), to(#99e2d0));
-  background: linear-gradient(rgba(147, 86, 220, 0.7), #99e2d0);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, rgba(147, 86, 220, 0.7)), color-stop(70%, #99e2d0));
+  background: linear-gradient(rgba(147, 86, 220, 0.7) 30%, #99e2d0 70%);
   position: fixed;
   top: 0;
   left: 0;
@@ -145,12 +145,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .load__image {
-  -webkit-animation: rotation 1200ms 400ms  linear;
-          animation: rotation 1200ms 400ms  linear;
+  -webkit-animation: rotation 800ms 200ms  linear;
+          animation: rotation 800ms 200ms  linear;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   position: absolute;
   top: 10em;
+}
+
+@media all and (min-width: 992px) {
+  .load__image {
+    top: 8em;
+    font-size: 4rem;
+  }
 }
 
 .header {
