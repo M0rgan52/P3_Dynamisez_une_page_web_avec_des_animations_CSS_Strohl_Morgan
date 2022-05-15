@@ -42,6 +42,28 @@
   }
 }
 
+@-webkit-keyframes like {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+
+@keyframes like {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+
 body {
   max-width: 1920px;
   margin: 0;
@@ -363,14 +385,6 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 300ms;
 }
 
-.restaurant__conteneur__carte:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-box-shadow: 0.5em 0.5em 0.5em #878787;
-          box-shadow: 0.5em 0.5em 0.5em #878787;
-  opacity: 0.85;
-}
-
 @media all and (min-width: 768px) {
   .restaurant__conteneur__carte {
     max-width: 22em;
@@ -532,10 +546,11 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #f6f6f6;
   border-top-left-radius: 2em;
   border-top-right-radius: 2em;
+  position: relative;
+  z-index: 1;
 }
 
 .menu__titre {
-  margin: 0;
   padding: 1.5em 1em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -560,8 +575,65 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: 0.2em;
 }
 
-.menu__titre .fa-heart {
-  font-size: 2rem;
+.menu__like {
+  height: 2em;
+  width: 2em;
+  background-color: transparent;
+  border: transparent;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  position: relative;
+  background-color: black;
+}
+
+.menu__like:hover::before {
+  opacity: 1;
+}
+
+.menu__like::before {
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  content: "";
+}
+
+.menu__heart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #f6f6f6;
+  mix-blend-mode: lighten;
+}
+
+.menu__like:hover .menu__heart--anim {
+  opacity: 0;
 }
 
 @media all and (min-width: 992px) {

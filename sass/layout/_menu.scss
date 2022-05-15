@@ -28,10 +28,11 @@
     background-color: rgb(246, 246, 246);
     border-top-left-radius: 2em;
     border-top-right-radius: 2em;
+    position: relative;
+    z-index: 1;
 
 
     &__titre {
-        margin: 0;
         padding: 1.5em 1em;
         display: flex;
         justify-content: space-between;
@@ -47,8 +48,57 @@
             margin-right: 0.2em;
         }
 
-        & .fa-heart {
-            font-size: 2rem;
+    }
+
+    &__like {
+        height: 2em;
+        width: 2em;
+        background-color: transparent;
+        border: transparent;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        position: relative;
+        background-color: black;
+
+        &:hover::before {
+            opacity: 1;
+        }
+
+        &::before {
+            opacity: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: linear-gradient(to bottom right,$couleur-secondaire, $couleur-primaire);
+            transition: 0.5s;
+            content: "";
+        }
+    }
+
+    &__heart {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color:rgb(246, 246, 246);
+        mix-blend-mode: lighten;
+    }
+
+
+    &__like:hover {
+        & .menu__heart {
+            &--anim {
+                opacity: 0;
+            }
         }
     }
 
