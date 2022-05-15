@@ -1,0 +1,27 @@
+.load {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $couleur-primaire;
+    background: linear-gradient(rgba($couleur-primaire, 0.7), rgba($couleur-tertiaire, 1));
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    animation: loader 2500ms ease-out both;
+    animation-iteration-count: 1;
+    overflow: hidden;
+    
+
+    &__image {
+        animation: rotation 1200ms 400ms  linear ;
+        animation-iteration-count: infinite;
+        position: absolute;
+        top: 10em;
+
+    }
+
+}
