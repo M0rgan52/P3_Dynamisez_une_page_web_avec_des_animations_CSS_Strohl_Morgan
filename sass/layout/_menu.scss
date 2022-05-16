@@ -107,10 +107,6 @@
             display: flex;
             justify-content: space-around;
 
-            @media all and (max-width: 1190px) {
-                flex-direction: column;
-                
-            }
         }
     }
 
@@ -132,6 +128,7 @@
         border-radius: 1em;
         box-shadow: 5px 5px 5px rgba(211, 211, 211, 0.5);
         overflow: hidden;
+        
 
         p {
             padding: 0 0 0 0.8em;
@@ -145,6 +142,7 @@
                 display: block;
                 height: 5px;
                 font-weight: bold;
+                
             }
         }
 
@@ -162,6 +160,11 @@
             border-top-right-radius: 1em;
             transition: all 300ms ease-in-out;
             margin: 0 -4em 0 0.1em;
+
+            @include tablette {
+                width: 6em;
+                margin: 0 -6em 0 0.1em;
+            }
 
             &__check {
                 transform: rotate(0);
@@ -196,6 +199,10 @@
         padding-bottom: .5em;
         padding-right: 0.5em;
         margin-left: 1em;
+
+        @include desktop {
+            margin-left: 0.5em;
+        }
     }
 
     &__entree {
@@ -205,8 +212,10 @@
 
         @include desktop {
             padding: 0;
-            flex: 1;
-            margin: 0 1em;
+            max-width: 31%;
+            min-width: 31%;
+            margin: 0 0.5em;
+            flex-wrap: nowrap;
         }
         
     }
@@ -219,13 +228,15 @@
 
         @include desktop {
             padding: 0;
-            margin: 0 1em;
-            flex: 1;
+            margin: 0 0.5em;
+            max-width: 31%;
+            min-width: 31%;
+            flex-wrap: nowrap;
 
-            @media all and (max-width: 1190px) {
-                margin-top: 2em;
+            // @include desktop-max {
+            //     margin-top: 2em;
                 
-            }
+            // }
         }
     }
 
@@ -237,13 +248,15 @@
 
         @include desktop {
             padding: 0;
-            margin: 0 1em;
-            flex: 1;
-
-            @media all and (max-width: 1190px) {
-                margin-top: 2em;
+            margin: 0 0.5em;
+            max-width: 31%;
+            min-width: 31%;
+            flex-wrap: nowrap;
+            
+            // @include desktop-max {
+            //     margin-top: 2em;
                 
-            }
+            // }
         }
     }
 
