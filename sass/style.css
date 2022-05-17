@@ -88,6 +88,28 @@
   }
 }
 
+@-webkit-keyframes apparition {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes apparition {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 body {
   max-width: 1920px;
   margin: 0;
@@ -158,6 +180,87 @@ h1, h2, h3, h4, h5, h6 {
     top: 8em;
     font-size: 4rem;
   }
+}
+
+.entree__anim {
+  -webkit-animation: apparition 1000ms both;
+          animation: apparition 1000ms both;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.entree__anim--delai-1 {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+
+.entree__anim--delai-2 {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+
+.entree__anim--delai-3 {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+
+.entree__anim--delai-4 {
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
+
+.plat__anim {
+  -webkit-animation: apparition 1000ms both;
+          animation: apparition 1000ms both;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.plat__anim--delai-1 {
+  -webkit-animation-delay: 550ms;
+          animation-delay: 550ms;
+}
+
+.plat__anim--delai-2 {
+  -webkit-animation-delay: 650ms;
+          animation-delay: 650ms;
+}
+
+.plat__anim--delai-3 {
+  -webkit-animation-delay: 750ms;
+          animation-delay: 750ms;
+}
+
+.plat__anim--delai-4 {
+  -webkit-animation-delay: 850ms;
+          animation-delay: 850ms;
+}
+
+.dessert__anim {
+  -webkit-animation: apparition 1000ms both;
+          animation: apparition 1000ms both;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.dessert__anim--delai-1 {
+  -webkit-animation-delay: 900ms;
+          animation-delay: 900ms;
+}
+
+.dessert__anim--delai-2 {
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
+}
+
+.dessert__anim--delai-3 {
+  -webkit-animation-delay: 1100ms;
+          animation-delay: 1100ms;
+}
+
+.dessert__anim--delai-4 {
+  -webkit-animation-delay: 1200ms;
+          animation-delay: 1200ms;
 }
 
 .header {

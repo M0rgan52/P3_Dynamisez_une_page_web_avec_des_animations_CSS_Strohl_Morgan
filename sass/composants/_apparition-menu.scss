@@ -1,0 +1,63 @@
+
+.entree__anim {
+    animation: apparition 1000ms both;
+    transform: scale(0);
+
+    &--delai-1 {
+        animation-delay: 200ms;
+    }
+    
+    &--delai-2 {
+        animation-delay: 300ms;
+    }
+
+    &--delai-3 {
+        animation-delay: 400ms;
+    }
+
+    &--delai-4 {
+        animation-delay: 500ms;
+    }
+}
+
+.plat__anim {
+    animation: apparition 1000ms both;
+    transform: scale(0);
+
+    &--delai-1 {
+        animation-delay: 550ms;
+    }
+    
+    &--delai-2 {
+        animation-delay: 650ms;
+    }
+
+    &--delai-3 {
+        animation-delay: 750ms;
+    }
+
+    &--delai-4 {
+        animation-delay: 850ms;
+    }
+}
+
+.dessert__anim {
+    animation: apparition 1000ms both;
+    transform: scale(0);
+
+    &--delai-1 {
+        animation-delay: 900ms;
+    }
+    
+    &--delai-2 {
+        animation-delay: 1000ms;
+    }
+
+    &--delai-3 {
+        animation-delay: 1100ms;
+    }
+
+    &--delai-4 {
+        animation-delay: 1200ms;
+    }
+}
