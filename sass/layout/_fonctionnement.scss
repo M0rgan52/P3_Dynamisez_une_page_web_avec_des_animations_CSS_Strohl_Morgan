@@ -67,12 +67,14 @@
             }
         }
 
-        &__carte:nth-child(3) {
+        &__carte:hover {
             background: rgba($couleur-primaire, 0.1);
-
-            .fa-store {
+        
+            .fonctionnement__conteneur__carte--logo {
                 color: $couleur-primaire;
             }
-        }
+
+        }   
+        
     }
 }

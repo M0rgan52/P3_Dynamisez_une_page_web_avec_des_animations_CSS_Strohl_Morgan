@@ -472,11 +472,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bolder;
 }
 
-.fonctionnement__conteneur__carte:nth-child(3) {
+.fonctionnement__conteneur__carte:hover {
   background: rgba(147, 86, 220, 0.1);
 }
 
-.fonctionnement__conteneur__carte:nth-child(3) .fa-store {
+.fonctionnement__conteneur__carte:hover .fonctionnement__conteneur__carte--logo {
   color: #9356DC;
 }
 
@@ -845,6 +845,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-shadow: 5px 5px 5px rgba(211, 211, 211, 0.5);
           box-shadow: 5px 5px 5px rgba(211, 211, 211, 0.5);
   overflow: hidden;
+  cursor: pointer;
 }
 
 .menu__carte p {
