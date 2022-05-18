@@ -16,6 +16,16 @@
 
 @mixin hover_btn {
     transform: scale(1.1);
-    box-shadow: 0.5em 0.5em 0.5em darken(rgb(211,211,211), 30%);
+    box-shadow: 0.5em 0.5em 0.5em darken($couleur-fond-secondaire, 30%);
     opacity: 0.85;
+}
+
+@mixin bouton {
+    text-decoration: none;
+    color: white;
+    box-shadow: 1px 1px 1px $couleur-fond-secondaire;
+    background: $couleur-btn;
+    border-radius: 2em; 
+    padding: 1em 3em;
+    
 }

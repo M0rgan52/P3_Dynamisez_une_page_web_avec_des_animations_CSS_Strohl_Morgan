@@ -265,7 +265,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .header {
   margin: 0;
-  border-bottom: solid lightgrey 1px;
+  border-bottom: solid #e6e6e6 1px;
   -webkit-box-shadow: 4px 4px 4px #e6e6e6;
           box-shadow: 4px 4px 4px #e6e6e6;
 }
@@ -364,16 +364,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .decouverte__conteneur__btn {
   margin: 0.6em auto 3.5em auto;
-  padding: 1em 1.2em;
-  text-decoration: none;
-  color: white;
-  border-radius: 2em;
-  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  -webkit-box-shadow: 1px 1px 1px lightgray;
-          box-shadow: 1px 1px 1px lightgray;
   -webkit-transition: all 300ms;
   transition: all 300ms;
+  text-decoration: none;
+  color: white;
+  -webkit-box-shadow: 1px 1px 1px lightgray;
+          box-shadow: 1px 1px 1px lightgray;
+  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  border-radius: 2em;
+  padding: 1em 3em;
 }
 
 .decouverte__conteneur__btn:hover {
@@ -1012,17 +1012,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .menu__btn a {
-  text-decoration: none;
-  color: white;
-  padding: 1em 3em;
-  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  -webkit-box-shadow: 1px 1px 1px lightgray;
-          box-shadow: 1px 1px 1px lightgray;
-  border-radius: 2em;
   -webkit-transition: all 300ms;
   transition: all 300ms;
   display: inline-block;
+  text-decoration: none;
+  color: white;
+  -webkit-box-shadow: 1px 1px 1px lightgray;
+          box-shadow: 1px 1px 1px lightgray;
+  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  border-radius: 2em;
+  padding: 1em 3em;
 }
 
 .menu__btn a:hover {

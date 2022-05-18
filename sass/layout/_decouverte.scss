@@ -1,7 +1,7 @@
 
 .decouverte {
     text-align: center;
-    background: linear-gradient(rgba(246, 246, 246, 0.3), rgba(246, 246, 246, 0.5));
+    background: linear-gradient(rgba($couleur-fond-base, 0.3), rgba($couleur-fond-base, 0.5));
     display: flex;
     flex-direction: column;
 
@@ -23,13 +23,9 @@
 
         &__btn {
             margin: 0.6em auto 3.5em auto;
-            padding: 1em 1.2em;
-            text-decoration: none;
-            color: white;
-            border-radius: 2em;
-            background: linear-gradient(to bottom right,$couleur-secondaire, $couleur-primaire);
-            box-shadow: 1px 1px 1px rgb(211,211,211);
             transition: all 300ms;
+            @include bouton;
+
             &:hover {
                 @include hover_btn;
             }

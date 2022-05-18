@@ -25,8 +25,8 @@
             display: flex;
             padding: 1.5em 0.1em 1.5em 0;
             border-radius: 1.5em;
-            box-shadow: 5px 5px 5px rgba(211, 211, 211, 0.5);
-            background: linear-gradient(rgba(246, 246, 246,0.05), rgba(246, 246, 246,0.2));
+            box-shadow: $boxshadow-1;
+            background: linear-gradient(rgba($couleur-fond-base,0.05), rgba($couleur-fond-base,0.2));
             margin: 1em auto;
             width: 80%;
 

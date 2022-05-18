@@ -4,6 +4,11 @@ $couleur-secondaire: #FF79DA;
 $couleur-tertiaire: #99E2D0;
 $couleur-footer: #353535;
 $couleur-polices-base: black;
+$couleur-fond-base: rgb(246, 246, 246);
+$couleur-fond-secondaire: rgb(211,211,211);
+$couleur-btn: linear-gradient(to bottom right,$couleur-secondaire, $couleur-primaire);
+
+$boxshadow-1: 5px 5px 5px rgba($couleur-fond-secondaire, 0.5);
 
 $breakpoint: (
     tablette: 768px,
