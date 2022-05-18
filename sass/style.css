@@ -123,12 +123,12 @@ main {
 
 @font-face {
   font-family: "roboto";
-  src: url("/sass/polices/Roboto/Roboto-Regular.ttf") format("truetype");
+  src: url("/sass/polices/Roboto/Roboto-Regular.ttf") format("truetype"), url("/sass/polices/Roboto/Roboto-Regular.woff") format("woff"), url("/sass/polices/Roboto/roboto-v30-latin-regular.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "shrikhand";
-  src: url("/sass/polices/Shrikhand/Shrikhand-Regular.ttf") format("truetype");
+  src: url("/sass/polices/Shrikhand/shrikhand-v11-latin-regular.eot") format("eot"), url("/sass/polices/Shrikhand/Shrikhand-Regular.ttf") format("truetype"), url("/sass/polices/Shrikhand/Shrikhand-Regular.woff") format("woff"), url("/sass/polices/Shrikhand/shrikhand-v11-latin-regular.woff2") format("woff2");
 }
 
 body {
@@ -756,7 +756,6 @@ h1, h2, h3, h4, h5, h6 {
 .menu__like {
   height: 2rem;
   width: 2rem;
-  background-color: transparent;
   border: transparent;
   padding: 0;
   display: -webkit-box;
@@ -786,8 +785,8 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 300ms;
+  transition: 300ms;
   content: "";
 }
 
