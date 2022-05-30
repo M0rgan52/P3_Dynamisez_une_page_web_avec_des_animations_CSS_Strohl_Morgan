@@ -1,6 +1,6 @@
 
 .restaurant {
-    background-color: rgba($couleur-fond-base, 0.3);
+    background-color: rgba(230, 230, 230, 0.5);
     margin: 0;
 
     &__titre {
@@ -50,6 +50,7 @@
             position: relative;
             border-radius: 1em;
             box-shadow: $boxshadow-1;
+            background: rgba($couleur-fond-base, 1);
             transition: all 300ms;
 
 
