@@ -6,9 +6,10 @@
     &__titre {
 
         margin-left: 1.5em;
+        padding-top: 1.5em;
 
         h2 {
-            font-weight: 100;
+            font-weight: 900;
         }
     }
 
@@ -111,7 +112,12 @@
                     justify-content: center;
                     margin: 0.5em 1.2em;
 
-                    h3, p {
+                    h3 {
+                        margin: 3px 0;
+                        font-weight: 900;
+                    }
+
+                    p {
                         margin: 3px 0;
                         font-weight: 100;
                     }

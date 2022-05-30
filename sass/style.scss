@@ -1,4 +1,33 @@
 
+
+@font-face {
+    font-family: "roboto";
+    src:url('/sass/polices/Roboto/Roboto-Regular.ttf') format('truetype'),
+        url('/sass/polices/Roboto/Roboto-Regular.woff') format('woff'),
+        url('/sass/polices/Roboto/Roboto-Regular.otf') format('opentype'),
+        url('/sass/polices/Roboto/roboto-v30-latin-regular.woff2') format('woff2');        
+        
+}
+
+@font-face {
+    font-family: "shrikhand";
+    src:url('/sass/polices/Shrikhand/shrikhand-v11-latin-regular.eot') format('eot'),        
+        url('/sass/polices/Shrikhand/Shrikhand-Regular.woff') format('woff'),
+        url('/sass/polices/Shrikhand/shrikhand-v11-latin-regular.otf') format('opentype'),
+        url('/sass/polices/Shrikhand/Shrikhand-Regular.ttf') format('truetype'),
+        url('/sass/polices/Shrikhand/shrikhand-v11-latin-regular.woff2') format('woff2');
+                
+}
+
+* {
+    font-family: 'roboto', Arial, Helvetica, sans-serif;
+}
+
+.menu__titre--polices {
+    font-family: 'shrikhand', Arial, Helvetica, sans-serif;
+}
+
+
 @import "./utils/variables";
 @import "./utils/mixins";
 @import "./utils/animation";
