@@ -7,16 +7,20 @@ Il s'agit du **projet n°:three:** de la formation Développeur Web d'OpenClassr
 ## Contexte :clipboard:
 
 Ce projet consiste à créer un visuel d'une application 100% mobile qui répertorie les menus de restaurants gastronomiques.
+
 En plus des système classique de réservation, les clients peuvent composer le menu de leur repas pour que les plats soit prêts à leur arrivée.
 
 ## Spécificités du projet :hammer_and_wrench:
 
 ### Techniques :arrow_down:
 
-Le développement devra se faire **uniquement en HTML - CSS**. 
-Utilisation de **Javascript interdit**.
-Utilisation de **SASS** recommandée.
-Aucun attribut style devra être présent en HTML.
+- [x] Le développement devra se faire **uniquement en HTML - CSS**. 
+
+- [x] Utilisation de **Javascript interdit**.
+
+- [x] Utilisation de **SASS** recommandée.
+
+- [x] Aucun attribut style devra être présent en HTML.
 
 ### Compatibilité :arrow_down:
 
