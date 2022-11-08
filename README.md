@@ -2,8 +2,6 @@
 
 Il s'agit du **projet n°:three:** de la formation Développeur Web d'OpenClassrooms (Mai 2022).
 
-**_(Projet en cours de validation :hourglass_flowing_sand:)_**
-
 ## Contexte :clipboard:
 
 Ce projet consiste à créer un visuel d'une application 100% mobile qui répertorie les menus de restaurants gastronomiques.
